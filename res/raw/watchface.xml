@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450" clipShape="CIRCLE">
+    <Metadata key="CLOCK_TYPE" value="DIGITAL" />
+    <Metadata key="PREVIEW_TIME" value="10:08:32" />
+
+    <Scene>
+        <!-- Background -->
+        <PartDraw>
+            <Rectangle x="0" y="0" width="450" height="450">
+                <Fill color="#FF000000" />
+            </Rectangle>
+        </PartDraw>
+
+        <!-- Minimal Time (Top Center) -->
+        <DigitalClock x="175" y="10" width="100" height="60">
+            <TimeText format="HH:mm">
+                <Font family="SYNC_TO_DEVICE" size="32" color="#FF00FFFF" />
+            </TimeText>
+        </DigitalClock>
+
+        <!-- Maximum Complications (8 Slots) -->
+        <!-- Top Row -->
+        <ComplicationSlot id="0" x="85"  y="60"  width="80" height="80" slotType="SHORT_TEXT" />
+        <ComplicationSlot id="1" x="185" y="75"  width="80" height="80" slotType="SHORT_TEXT" />
+        <ComplicationSlot id="2" x="285" y="60"  width="80" height="80" slotType="SHORT_TEXT" />
+
+        <!-- Middle Row -->
+        <ComplicationSlot id="3" x="50"  y="185" width="80" height="80" slotType="SHORT_TEXT" />
+        <ComplicationSlot id="4" x="320" y="185" width="80" height="80" slotType="SHORT_TEXT" />
+
+        <!-- Bottom Row -->
+        <ComplicationSlot id="5" x="85"  y="310" width="80" height="80" slotType="SHORT_TEXT" />
+        <ComplicationSlot id="6" x="185" y="325" width="80" height="80" slotType="SHORT_TEXT" />
+        <ComplicationSlot id="7" x="285" y="310" width="80" height="80" slotType="SHORT_TEXT" />
+    </Scene>
+</WatchFace>

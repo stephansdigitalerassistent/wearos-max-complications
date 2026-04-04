@@ -12,25 +12,21 @@
         </PartDraw>
 
         <!-- Minimal Time (Top Center) -->
-        <DigitalClock x="175" y="10" width="100" height="60">
+        <DigitalClock x="150" y="30" width="150" height="80">
             <TimeText format="HH:mm">
-                <Font family="SYNC_TO_DEVICE" size="32" color="#FF00FFFF" />
+                <Font family="SYNC_TO_DEVICE" size="48" color="#FF00FFFF" />
             </TimeText>
         </DigitalClock>
 
-        <!-- Maximum Complications (8 Slots) -->
-        <!-- Top Row -->
-        <ComplicationSlot id="0" x="85"  y="60"  width="80" height="80" slotType="SHORT_TEXT" />
-        <ComplicationSlot id="1" x="185" y="75"  width="80" height="80" slotType="SHORT_TEXT" />
-        <ComplicationSlot id="2" x="285" y="60"  width="80" height="80" slotType="SHORT_TEXT" />
+        <!-- Single Large Complication (Center/Bottom) -->
+        <!-- Using LONG_TEXT for maximum information density -->
+        <ComplicationSlot 
+            id="0" 
+            x="25"  y="140" 
+            width="400" height="240" 
+            slotType="LONG_TEXT">
+            <!-- Optional: Default provider or system info could be defined here -->
+        </ComplicationSlot>
 
-        <!-- Middle Row -->
-        <ComplicationSlot id="3" x="50"  y="185" width="80" height="80" slotType="SHORT_TEXT" />
-        <ComplicationSlot id="4" x="320" y="185" width="80" height="80" slotType="SHORT_TEXT" />
-
-        <!-- Bottom Row -->
-        <ComplicationSlot id="5" x="85"  y="310" width="80" height="80" slotType="SHORT_TEXT" />
-        <ComplicationSlot id="6" x="185" y="325" width="80" height="80" slotType="SHORT_TEXT" />
-        <ComplicationSlot id="7" x="285" y="310" width="80" height="80" slotType="SHORT_TEXT" />
     </Scene>
 </WatchFace>

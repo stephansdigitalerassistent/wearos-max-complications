@@ -1,12 +1,11 @@
-# Wear OS Max Complications Watch Face
+# Wear OS Big Complication Watch Face
 
 A minimal and efficient watch face for Wear OS 4+ (API Level 33+) designed using the **Watch Face Format (WFF)**.
 
 ## Features
-- **Minimal Time Display:** Small digital clock at the top to maximize screen real estate for information.
-- **Maximum Complications:** 8 complication slots (the maximum allowed by the format).
-- **Battery Efficient:** Uses a solid black background for OLED screens and the declarative WFF which doesn't require a runtime.
-- **Modern Standards:** Built with WFF v2.
+- **Minimal Time Display:** Clean digital clock at the top.
+- **Single Large Complication:** One massive `LONG_TEXT` complication slot that takes up the majority of the screen. Perfect for weather, detailed calendar events, or fitness data.
+- **Battery Efficient:** Solid black background and declarative WFF.
 
 ## Project Structure
 - `res/raw/watchface.xml`: The core declarative UI.

@@ -35,7 +35,7 @@
         <!-- ============================================ -->
         <ComplicationSlot 
             slotId="1" 
-            supportedTypes="SHORT_TEXT LONG_TEXT RANGED_VALUE MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE" 
+            supportedTypes="LONG_TEXT RANGED_VALUE SHORT_TEXT PHOTO_IMAGE SMALL_IMAGE MONOCHROMATIC_IMAGE" 
             x="15" y="62" 
             width="420" height="360">
             

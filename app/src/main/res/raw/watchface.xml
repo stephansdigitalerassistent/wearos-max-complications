@@ -149,9 +149,7 @@
         <DigitalClock x="75" y="360" width="300" height="70">
             <TimeText x="0" y="0" width="300" height="70" format="hh:mm" align="CENTER">
                 <Variant mode="AMBIENT" target="alpha" value="160" />
-                <Text>
-                    <Font family="SYNC_TO_DEVICE" size="52" color="#FFF5F0E0" weight="NORMAL" />
-                </Text>
+                <Font family="SYNC_TO_DEVICE" size="52" color="#FFF5F0E0" weight="NORMAL" />
             </TimeText>
         </DigitalClock>
 

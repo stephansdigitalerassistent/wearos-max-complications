@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:\\mipmap_ic_launcher.png.flat",
+        "source": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:\\mipmap\\ic_launcher.png"
+    },
+    {
+        "merged": "com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:/raw_watchface.xml.flat",
+        "source": "com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:/raw/watchface.xml"
+    },
+    {
+        "merged": "com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:\\drawable_preview.png.flat",
+        "source": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:\\drawable\\preview.png"
+    },
+    {
+        "merged": "com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:\\xml_watch_face_info.xml.flat",
+        "source": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:\\xml\\watch_face_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-debug-4:\\raw_watchface.xml.flat",
+        "source": "C:\\Users\\steph\\.gradle\\daemon\\8.13\\com.stephansdigitalerassistent.wearosmaxcomplications.app-main-6:\\raw\\watchface.xml"
+    }
+]

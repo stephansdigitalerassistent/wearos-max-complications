@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+drawable preview
+mipmap ic_launcher
+raw watchface
+xml watch_face_info

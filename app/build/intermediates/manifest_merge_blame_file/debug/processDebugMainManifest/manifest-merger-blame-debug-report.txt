@@ -1,0 +1,74 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.stephansdigitalerassistent.wearosmaxcomplications"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="33"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-feature android:name="android.hardware.type.watch" />
+11-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:4:5-64
+11-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:4:19-61
+12
+13    <application
+13-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:6:5-35:19
+14        android:allowBackup="true"
+14-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:7:9-35
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:hasCode="false"
+17-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:11:9-32
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:8:9-43
+19        android:label="Big Complication"
+19-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:9:9-41
+20        android:supportsRtl="true" >
+20-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:10:9-35
+21
+22        <!-- WFF Version 2: required for targetSdk 34+ and enables all complication types -->
+23        <property
+23-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:14:9-16:33
+24            android:name="com.google.wear.watchface.format.version"
+24-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:15:13-68
+25            android:value="2" />
+25-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:16:13-30
+26
+27        <service
+27-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:18:9-33:19
+28            android:name="com.google.android.gms.wearable.WatchFaceService"
+28-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:19:13-76
+29            android:exported="true"
+29-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:20:13-36
+30            android:label="Big Complication"
+30-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:21:13-45
+31            android:permission="android.permission.BIND_WATCH_FACE" >
+31-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:22:13-68
+32            <intent-filter>
+32-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:23:13-26:29
+33                <action android:name="android.service.wallpaper.WallpaperService" />
+33-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:24:17-85
+33-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:24:25-82
+34
+35                <category android:name="com.google.android.wearable.watchface.category.WATCH_FACE" />
+35-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:25:17-102
+35-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:25:27-99
+36            </intent-filter>
+37
+38            <meta-data
+38-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:27:13-29:56
+39                android:name="com.google.android.wearable.watchface.preview"
+39-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:28:17-77
+40                android:resource="@drawable/preview" />
+40-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:29:17-53
+41            <meta-data
+41-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:30:13-32:56
+42                android:name="com.google.android.wearable.watchface.preview_circular"
+42-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:31:17-86
+43                android:resource="@drawable/preview" />
+43-->C:\Users\steph\Programme\2026_Watchface_Max_Complications\app\src\main\AndroidManifest.xml:32:17-53
+44        </service>
+45    </application>
+46
+47</manifest>

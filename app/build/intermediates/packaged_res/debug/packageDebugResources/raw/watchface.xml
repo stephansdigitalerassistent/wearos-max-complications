@@ -143,14 +143,12 @@
         </ComplicationSlot>
 
         <!-- ============================================ -->
-        <!-- WATERMARK TIME: Overlaid on the complication -->
-        <!-- Drawn second so it is always visible.        -->
-        <!-- Alpha is applied via ARGB color (33 opcaity) -->
+        <!-- TIME: Bottom anchored, highly readable       -->
+        <!-- fully opaque warm white for elderly          -->
         <!-- ============================================ -->
-        <DigitalClock x="0" y="150" width="450" height="150">
-            <TimeText x="0" y="0" width="450" height="150" format="hh:mm" align="CENTER">
-                <!-- #55F5F0E0 is ~33% opacity warm white -->
-                <Font family="SYNC_TO_DEVICE" size="130" color="#55F5F0E0" weight="BOLD" />
+        <DigitalClock x="75" y="360" width="300" height="70">
+            <TimeText x="0" y="0" width="300" height="70" format="hh:mm" align="CENTER">
+                <Font family="SYNC_TO_DEVICE" size="52" color="#FFF5F0E0" weight="BOLD" />
             </TimeText>
         </DigitalClock>
 

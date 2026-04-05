@@ -6,8 +6,8 @@
     Elderly-friendly: High contrast, warm colors, large text, no thin fonts.
     
     Layout (450x450 circle):
-    - Time: Compact bar at top center (y=12, 36px warm white)
-    - Complication: Fills ~80% of remaining screen (y=58 to y=420)
+    - Time: Compact bar at top center (y=12, 38px warm white)
+    - Complication: Fills ~80% of remaining screen (y=62 to y=422)
     
     Supported complication types: LONG_TEXT, SHORT_TEXT, RANGED_VALUE,
     MONOCHROMATIC_IMAGE, SMALL_IMAGE, PHOTO_IMAGE
@@ -19,12 +19,8 @@
     <Scene backgroundColor="#FF000000">
 
         <!-- ============================================ -->
-        <!-- BACKGROUND: Pure black for OLED efficiency   -->
-        <!-- ============================================ -->
-
-        <!-- ============================================ -->
         <!-- TIME: Compact 24h clock at top center        -->
-        <!-- Warm white (#FFF5F0E0) for elderly readbility -->
+        <!-- Warm white (#FFF5F0E0) for elderly readability -->
         <!-- ============================================ -->
         <DigitalClock x="125" y="10" width="200" height="48">
             <TimeText x="0" y="0" width="200" height="48" format="HH:mm" align="CENTER">
@@ -39,7 +35,7 @@
         <!-- ============================================ -->
         <ComplicationSlot 
             slotId="1" 
-            supportedTypes="LONG_TEXT SHORT_TEXT RANGED_VALUE MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE" 
+            supportedTypes="SHORT_TEXT LONG_TEXT RANGED_VALUE MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE" 
             x="15" y="62" 
             width="420" height="360">
             
@@ -55,25 +51,22 @@
             <!-- ======================================== -->
             <Complication type="LONG_TEXT">
                 <Group x="0" y="0" width="420" height="360">
-                    <!-- Icon (if provided) -->
-                    <PartImage x="160" y="10" width="100" height="100"
-                        tintColor="#FFFFCC00">
-                        <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                    </PartImage>
                     <!-- Title -->
-                    <PartText x="10" y="120" width="400" height="60" align="CENTER">
+                    <PartText x="10" y="40" width="400" height="60" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="28" color="#FFFFCC00" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TITLE]" />
+                            <Template>%s
+                                <Parameter expression="[COMPLICATION.TITLE]" />
+                            </Template>
                         </Text>
                     </PartText>
                     <!-- Main text — large for readability -->
-                    <PartText x="10" y="180" width="400" height="160" align="CENTER">
+                    <PartText x="10" y="110" width="400" height="200" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="40" color="#FFFFFFFF" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TEXT]" />
+                            <Template>%s
+                                <Parameter expression="[COMPLICATION.TEXT]" />
+                            </Template>
                         </Text>
                     </PartText>
                 </Group>
@@ -85,67 +78,51 @@
             <!-- ======================================== -->
             <Complication type="SHORT_TEXT">
                 <Group x="0" y="0" width="420" height="360">
-                    <!-- Icon (if provided) -->
-                    <PartImage x="160" y="20" width="100" height="100"
-                        tintColor="#FFFFCC00">
-                        <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
-                    </PartImage>
                     <!-- Title -->
-                    <PartText x="10" y="130" width="400" height="60" align="CENTER">
+                    <PartText x="10" y="60" width="400" height="60" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="28" color="#FFFFCC00" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TITLE]" />
+                            <Template>%s
+                                <Parameter expression="[COMPLICATION.TITLE]" />
+                            </Template>
                         </Text>
                     </PartText>
                     <!-- Main text — extra large -->
-                    <PartText x="10" y="190" width="400" height="150" align="CENTER">
+                    <PartText x="10" y="130" width="400" height="160" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="52" color="#FFFFFFFF" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TEXT]" />
+                            <Template>%s
+                                <Parameter expression="[COMPLICATION.TEXT]" />
+                            </Template>
                         </Text>
                     </PartText>
                 </Group>
             </Complication>
 
             <!-- ======================================== -->
-            <!-- RANGED_VALUE: Progress arc + value text  -->
+            <!-- RANGED_VALUE: Value text + title         -->
             <!-- Use case: step goal, heart rate zones    -->
+            <!-- Simplified: text only, no arc (avoids    -->
+            <!-- expression parsing issues)               -->
             <!-- ======================================== -->
             <Complication type="RANGED_VALUE">
                 <Group x="0" y="0" width="420" height="360">
-                    <!-- Background arc track (dark gray) -->
-                    <PartDraw x="60" y="30" width="300" height="300">
-                        <Arc centerX="150" centerY="150" width="280" height="280"
-                             startAngle="-225" endAngle="45"
-                             direction="CLOCKWISE">
-                            <Stroke color="#FF333333" thickness="16" cap="ROUND" />
-                        </Arc>
-                    </PartDraw>
-                    <!-- Foreground progress arc (warm amber) -->
-                    <PartDraw x="60" y="30" width="300" height="300">
-                        <Arc centerX="150" centerY="150" width="280" height="280"
-                             startAngle="-225" 
-                             endAngle="[COMPLICATION.RANGED_VALUE_VALUE] / [COMPLICATION.RANGED_VALUE_MAX] * 270 - 225"
-                             direction="CLOCKWISE">
-                            <Stroke color="#FFFFB300" thickness="16" cap="ROUND" />
-                        </Arc>
-                    </PartDraw>
                     <!-- Title -->
-                    <PartText x="10" y="100" width="400" height="50" align="CENTER">
+                    <PartText x="10" y="60" width="400" height="50" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="24" color="#FFFFCC00" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TITLE]" />
+                            <Template>%s
+                                <Parameter expression="[COMPLICATION.TITLE]" />
+                            </Template>
                         </Text>
                     </PartText>
                     <!-- Value text — big and centered -->
-                    <PartText x="10" y="150" width="400" height="100" align="CENTER">
+                    <PartText x="10" y="120" width="400" height="160" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="56" color="#FFFFFFFF" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TEXT]" />
+                            <Template>%s
+                                <Parameter expression="[COMPLICATION.TEXT]" />
+                            </Template>
                         </Text>
                     </PartText>
                 </Group>
@@ -157,17 +134,10 @@
             <!-- ======================================== -->
             <Complication type="MONOCHROMATIC_IMAGE">
                 <Group x="0" y="0" width="420" height="360">
-                    <PartImage x="110" y="30" width="200" height="200"
+                    <PartImage x="110" y="80" width="200" height="200"
                         tintColor="#FFFFCC00">
                         <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
                     </PartImage>
-                    <PartText x="10" y="240" width="400" height="100" align="CENTER">
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="28" color="#FFFFFFFF" />
-                            <Template>%s</Template>
-                            <Parameter expression="[COMPLICATION.TEXT]" />
-                        </Text>
-                    </PartText>
                 </Group>
             </Complication>
 
@@ -177,7 +147,7 @@
             <!-- ======================================== -->
             <Complication type="SMALL_IMAGE">
                 <Group x="0" y="0" width="420" height="360">
-                    <PartImage x="60" y="10" width="300" height="300">
+                    <PartImage x="60" y="30" width="300" height="300">
                         <Image resource="[COMPLICATION.SMALL_IMAGE]" />
                     </PartImage>
                 </Group>

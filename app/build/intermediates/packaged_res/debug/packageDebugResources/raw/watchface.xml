@@ -23,7 +23,7 @@
         <!-- Warm white (#FFF5F0E0) for elderly readability -->
         <!-- ============================================ -->
         <DigitalClock x="125" y="10" width="200" height="48">
-            <TimeText x="0" y="0" width="200" height="48" format="HH:mm" align="CENTER">
+            <TimeText x="0" y="0" width="200" height="48" format="hh:mm" align="CENTER">
                 <Font family="SYNC_TO_DEVICE" size="38" color="#FFF5F0E0" />
             </TimeText>
         </DigitalClock>

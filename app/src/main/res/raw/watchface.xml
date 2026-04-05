@@ -22,7 +22,7 @@
         <!-- TIME: Compact 24h clock at top center        -->
         <!-- Warm white (#FFF5F0E0) for elderly readability -->
         <!-- ============================================ -->
-        <DigitalClock x="125" y="10" width="200" height="48">
+        <DigitalClock x="125" y="60" width="200" height="48">
             <TimeText x="0" y="0" width="200" height="48" format="hh:mm" align="CENTER">
                 <Font family="SYNC_TO_DEVICE" size="38" color="#FFF5F0E0" />
             </TimeText>
@@ -31,13 +31,13 @@
         <!-- ============================================ -->
         <!-- SINGLE MEGA COMPLICATION                     -->
         <!-- Fills the vast majority of the watch face    -->
-        <!-- x=15, y=62, 420x360 = ~80% of screen area   -->
+        <!-- x=15, y=115, 420x310 = ~70% of screen area  -->
         <!-- ============================================ -->
         <ComplicationSlot 
             slotId="1" 
             supportedTypes="PHOTO_IMAGE LONG_TEXT RANGED_VALUE SHORT_TEXT MONOCHROMATIC_IMAGE SMALL_IMAGE" 
-            x="15" y="62" 
-            width="420" height="360">
+            x="15" y="115" 
+            width="420" height="310">
             
             <BoundingOval x="0" y="0" width="420" height="360" />
             
@@ -50,9 +50,9 @@
             <!-- Primary use case: weather, calendar, etc -->
             <!-- ======================================== -->
             <Complication type="LONG_TEXT">
-                <Group x="0" y="0" width="420" height="360">
+                <Group x="0" y="0" width="420" height="310">
                     <!-- Title -->
-                    <PartText x="10" y="40" width="400" height="60" align="CENTER">
+                    <PartText x="10" y="30" width="400" height="60" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="28" color="#FFFFCC00" />
                             <Template>%s
@@ -61,7 +61,7 @@
                         </Text>
                     </PartText>
                     <!-- Main text — large for readability -->
-                    <PartText x="10" y="110" width="400" height="200" align="CENTER">
+                    <PartText x="10" y="100" width="400" height="180" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="40" color="#FFFFFFFF" />
                             <Template>%s
@@ -77,9 +77,9 @@
             <!-- Use case: step count, battery, timer     -->
             <!-- ======================================== -->
             <Complication type="SHORT_TEXT">
-                <Group x="0" y="0" width="420" height="360">
+                <Group x="0" y="0" width="420" height="310">
                     <!-- Title -->
-                    <PartText x="10" y="60" width="400" height="60" align="CENTER">
+                    <PartText x="10" y="50" width="400" height="60" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="28" color="#FFFFCC00" />
                             <Template>%s
@@ -88,7 +88,7 @@
                         </Text>
                     </PartText>
                     <!-- Main text — extra large -->
-                    <PartText x="10" y="130" width="400" height="160" align="CENTER">
+                    <PartText x="10" y="120" width="400" height="150" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="52" color="#FFFFFFFF" />
                             <Template>%s
@@ -106,9 +106,9 @@
             <!-- expression parsing issues)               -->
             <!-- ======================================== -->
             <Complication type="RANGED_VALUE">
-                <Group x="0" y="0" width="420" height="360">
+                <Group x="0" y="0" width="420" height="310">
                     <!-- Title -->
-                    <PartText x="10" y="60" width="400" height="50" align="CENTER">
+                    <PartText x="10" y="50" width="400" height="50" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="24" color="#FFFFCC00" />
                             <Template>%s
@@ -117,7 +117,7 @@
                         </Text>
                     </PartText>
                     <!-- Value text — big and centered -->
-                    <PartText x="10" y="120" width="400" height="160" align="CENTER">
+                    <PartText x="10" y="110" width="400" height="160" align="CENTER">
                         <Text>
                             <Font family="SYNC_TO_DEVICE" size="56" color="#FFFFFFFF" />
                             <Template>%s
@@ -133,8 +133,8 @@
             <!-- Use case: app shortcuts, status icons    -->
             <!-- ======================================== -->
             <Complication type="MONOCHROMATIC_IMAGE">
-                <Group x="0" y="0" width="420" height="360">
-                    <PartImage x="110" y="80" width="200" height="200"
+                <Group x="0" y="0" width="420" height="310">
+                    <PartImage x="110" y="55" width="200" height="200"
                         tintColor="#FFFFCC00">
                         <Image resource="[COMPLICATION.MONOCHROMATIC_IMAGE]" />
                     </PartImage>
@@ -146,8 +146,8 @@
             <!-- Use case: contact photos, app icons      -->
             <!-- ======================================== -->
             <Complication type="SMALL_IMAGE">
-                <Group x="0" y="0" width="420" height="360">
-                    <PartImage x="60" y="30" width="300" height="300">
+                <Group x="0" y="0" width="420" height="310">
+                    <PartImage x="85" y="30" width="250" height="250">
                         <Image resource="[COMPLICATION.SMALL_IMAGE]" />
                     </PartImage>
                 </Group>
@@ -158,8 +158,8 @@
             <!-- Use case: personal photos, album art     -->
             <!-- ======================================== -->
             <Complication type="PHOTO_IMAGE">
-                <Group x="0" y="0" width="420" height="360">
-                    <PartImage x="10" y="0" width="400" height="360">
+                <Group x="0" y="0" width="420" height="310">
+                    <PartImage x="10" y="0" width="400" height="310">
                         <Image resource="[COMPLICATION.PHOTO_IMAGE]" />
                     </PartImage>
                 </Group>

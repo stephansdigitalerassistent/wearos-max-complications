@@ -20,7 +20,7 @@
         <!-- ============================================ -->
         <ComplicationSlot 
             slotId="1" 
-            supportedTypes="LONG_TEXT SHORT_TEXT RANGED_VALUE MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE" 
+            supportedTypes="LONG_TEXT PHOTO_IMAGE SMALL_IMAGE MONOCHROMATIC_IMAGE SHORT_TEXT RANGED_VALUE" 
             x="25" y="70" 
             width="400" height="300">
             

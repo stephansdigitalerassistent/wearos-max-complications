@@ -139,7 +139,7 @@
             <Variant mode="AMBIENT" target="alpha" value="255" />
             <DigitalClock x="0" y="0" width="300" height="70">
                 <TimeText x="0" y="0" width="300" height="70" format="hh:mm" align="CENTER">
-                    <Font family="SYNC_TO_DEVICE" size="52" color="#AAAAAA" weight="THIN" />
+                    <Font family="SYNC_TO_DEVICE" size="52" color="#FFFFFF" weight="THIN" />
                 </TimeText>
             </DigitalClock>
         </Group>

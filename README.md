@@ -5,7 +5,7 @@ A minimal, **elderly-friendly** watch face for Wear OS 4+ (API 33+) built with t
 ## Design Philosophy
 - **ONE complication, MAXIMUM space** — The single complication slot fills ~80% of the screen
 - **Elderly-friendly colors** — Warm white & amber tones (no blue/cyan), high contrast on pure black
-- **Large text** — 28–56px font sizes for easy readability
+- **Large text** — 24–60px font sizes for easy readability
 - **Battery efficient** — Pure black OLED background, declarative WFF (no code)
 
 ## Supported Complication Types

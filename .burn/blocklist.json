@@ -1,0 +1,10 @@
+{
+  "_comment": "Wear OS Max Complications is a pure Android/Gradle project. NPM-related tasks are explicitly out of scope.",
+  "blocked_patterns": [
+    "npm install",
+    "npm audit",
+    "package\\.json",
+    "package-lock\\.json",
+    "node_modules"
+  ]
+}

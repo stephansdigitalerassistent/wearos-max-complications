@@ -13,7 +13,7 @@ A minimal, **elderly-friendly** watch face for Wear OS 4+ (API 33+) built with t
 |------|----------|
 | `LONG_TEXT` | Weather forecasts, calendar events, detailed info |
 | `SHORT_TEXT` | Step count, battery %, timer |
-| `RANGED_VALUE` | Step goals, heart rate zones |
+| `RANGED_VALUE` | Step goals, heart rate zones (with progress arc) |
 | `MONOCHROMATIC_IMAGE` | App shortcuts, status icons |
 | `SMALL_IMAGE` | Contact photos, app icons |
 | `PHOTO_IMAGE` | Personal photos, album art |

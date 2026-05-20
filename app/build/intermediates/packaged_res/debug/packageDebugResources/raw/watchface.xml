@@ -7,76 +7,22 @@
 
         <!-- ============================================ -->
         <!-- COMPLICATION SLOT (Center-Bottom)            -->
+        <!-- Restricted to IMAGE types only (no text)     -->
         <!-- ============================================ -->
         <ComplicationSlot
             slotId="1"
-            supportedTypes="SHORT_TEXT LONG_TEXT RANGED_VALUE MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE"
+            supportedTypes="MONOCHROMATIC_IMAGE SMALL_IMAGE PHOTO_IMAGE"
             x="45" y="240"
             width="360" height="170">
 
             <BoundingOval x="0" y="0" width="360" height="170" />
 
+            <!-- Default to a clean Watch Battery icon -->
             <DefaultProviderPolicy
-                defaultSystemProvider="STEP_COUNT"
-                defaultSystemProviderType="SHORT_TEXT" />
+                defaultSystemProvider="WATCH_BATTERY"
+                defaultSystemProviderType="MONOCHROMATIC_IMAGE" />
 
-            <Complication type="LONG_TEXT">
-                <Group x="0" y="0" width="360" height="170">
-                    <PartText x="0" y="10" width="360" height="40" align="CENTER">
-                        <Variant mode="AMBIENT" target="alpha" value="160" />
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="24" color="#FFFFCC00" />
-                            <Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template>
-                        </Text>
-                    </PartText>
-                    <PartText x="0" y="55" width="360" height="105" align="CENTER">
-                        <Variant mode="AMBIENT" target="alpha" value="180" />
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="42" color="#FFFFFFFF" />
-                            <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
-                        </Text>
-                    </PartText>
-                </Group>
-            </Complication>
-
-            <Complication type="SHORT_TEXT">
-                <Group x="0" y="0" width="360" height="170">
-                    <PartText x="0" y="10" width="360" height="40" align="CENTER">
-                        <Variant mode="AMBIENT" target="alpha" value="160" />
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="24" color="#FFFFCC00" />
-                            <Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template>
-                        </Text>
-                    </PartText>
-                    <PartText x="0" y="55" width="360" height="105" align="CENTER">
-                        <Variant mode="AMBIENT" target="alpha" value="180" />
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="52" color="#FFFFFFFF" />
-                            <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
-                        </Text>
-                    </PartText>
-                </Group>
-            </Complication>
-
-            <Complication type="RANGED_VALUE">
-                <Group x="0" y="0" width="360" height="170">
-                    <PartText x="0" y="10" width="360" height="35" align="CENTER">
-                        <Variant mode="AMBIENT" target="alpha" value="160" />
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="22" color="#FFFFCC00" />
-                            <Template>%s<Parameter expression="[COMPLICATION.TITLE]"/></Template>
-                        </Text>
-                    </PartText>
-                    <PartText x="0" y="50" width="360" height="110" align="CENTER">
-                        <Variant mode="AMBIENT" target="alpha" value="180" />
-                        <Text>
-                            <Font family="SYNC_TO_DEVICE" size="52" color="#FFFFFFFF" />
-                            <Template>%s<Parameter expression="[COMPLICATION.TEXT]"/></Template>
-                        </Text>
-                    </PartText>
-                </Group>
-            </Complication>
-
+            <!-- MONOCHROMATIC_IMAGE: centered icon at bottom -->
             <Complication type="MONOCHROMATIC_IMAGE">
                 <Group x="0" y="0" width="360" height="170">
                     <PartImage x="95" y="10" width="170" height="150" tintColor="#FFFFCC00">
@@ -86,6 +32,7 @@
                 </Group>
             </Complication>
 
+            <!-- SMALL_IMAGE: centered image at bottom -->
             <Complication type="SMALL_IMAGE">
                 <Group x="0" y="0" width="360" height="170">
                     <PartImage x="95" y="10" width="170" height="150">
@@ -95,6 +42,7 @@
                 </Group>
             </Complication>
 
+            <!-- PHOTO_IMAGE: full area photo at bottom -->
             <Complication type="PHOTO_IMAGE">
                 <Group x="0" y="0" width="360" height="170">
                     <PartImage x="0" y="0" width="360" height="170">

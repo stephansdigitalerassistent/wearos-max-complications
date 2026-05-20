@@ -107,33 +107,19 @@
         </ComplicationSlot>
 
         <!-- ============================================ -->
-        <!-- TIME: ACTIVE MODE (Center-Top, y=80)         -->
+        <!-- TIME: Simplified Single Group (y=80)         -->
+        <!-- Uses same color and hh:mm format as minimal. -->
         <!-- ============================================ -->
         <Group x="25" y="80" width="400" height="100" alpha="255">
-            <Variant mode="AMBIENT" target="alpha" value="0" />
             <DigitalClock x="0" y="0" width="400" height="100">
-                <TimeText x="0" y="0" width="400" height="100" format="HH:mm" align="CENTER">
-                    <Font family="SYNC_TO_DEVICE" size="80" color="#FFFFFFFF" weight="BOLD" />
-                </TimeText>
-            </DigitalClock>
-        </Group>
-
-        <!-- ============================================ -->
-        <!-- TIME: AMBIENT MODE (Center-Top, y=80)        -->
-        <!-- ============================================ -->
-        <Group x="25" y="80" width="400" height="100" alpha="0">
-            <Variant mode="AMBIENT" target="alpha" value="255" />
-            <DigitalClock x="0" y="0" width="400" height="100">
-                <TimeText x="0" y="0" width="400" height="100" format="HH:mm" align="CENTER">
-                    <Font family="SYNC_TO_DEVICE" size="80" color="#FFFFFFFF" weight="NORMAL" />
+                <TimeText x="0" y="0" width="400" height="100" format="hh:mm" hourFormat="SYNC_TO_DEVICE" align="CENTER">
+                    <Font family="SYNC_TO_DEVICE" size="80" color="#FFF5F0E0" weight="BOLD" />
                 </TimeText>
             </DigitalClock>
         </Group>
 
         <!-- ============================================ -->
         <!-- DATE: Below Time (amber accent, y=175)       -->
-        <!-- Uses PartText with Tag Expressions to avoid  -->
-        <!-- DigitalClock parse/render crash.             -->
         <!-- ============================================ -->
         <Group x="25" y="175" width="400" height="45">
             <Variant mode="AMBIENT" target="alpha" value="160" />

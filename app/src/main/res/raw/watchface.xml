@@ -67,14 +67,14 @@
         </Group>
 
         <!-- ============================================ -->
-        <!-- DATE: Below Time (amber accent, y=180, Bolder)-->
-        <!-- Font size increased to 34px                  -->
+        <!-- DATE: Below Time (amber accent, y=175, Bolder)-->
+        <!-- Font size increased to 44px BOLD             -->
         <!-- ============================================ -->
-        <Group x="25" y="180" width="400" height="50">
+        <Group x="25" y="175" width="400" height="65">
             <Variant mode="AMBIENT" target="alpha" value="160" />
-            <PartText x="0" y="0" width="400" height="50" align="CENTER">
+            <PartText x="0" y="0" width="400" height="65" align="CENTER">
                 <Text>
-                    <Font family="SYNC_TO_DEVICE" size="34" color="#FFFFCC00" weight="NORMAL" />
+                    <Font family="SYNC_TO_DEVICE" size="44" color="#FFFFCC00" weight="BOLD" />
                     <Template>%s, %s %s<Parameter expression="[DAY_OF_WEEK_S]"/><Parameter expression="[DAY]"/><Parameter expression="[MONTH_S]"/></Template>
                 </Text>
             </PartText>

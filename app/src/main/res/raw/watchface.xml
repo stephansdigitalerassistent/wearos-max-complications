@@ -132,14 +132,17 @@
 
         <!-- ============================================ -->
         <!-- DATE: Below Time (amber accent, y=175)       -->
+        <!-- Uses PartText with Tag Expressions to avoid  -->
+        <!-- DigitalClock parse/render crash.             -->
         <!-- ============================================ -->
         <Group x="25" y="175" width="400" height="45">
             <Variant mode="AMBIENT" target="alpha" value="160" />
-            <DigitalClock x="0" y="0" width="400" height="45">
-                <TimeText x="0" y="0" width="400" height="45" format="EEE, d MMM" align="CENTER">
+            <PartText x="0" y="0" width="400" height="45" align="CENTER">
+                <Text>
                     <Font family="SYNC_TO_DEVICE" size="28" color="#FFFFCC00" weight="NORMAL" />
-                </TimeText>
-            </DigitalClock>
+                    <Template>%s, %s %s<Parameter expression="[DAY_OF_WEEK_S]"/><Parameter expression="[DAY]"/><Parameter expression="[MONTH_S]"/></Template>
+                </Text>
+            </PartText>
         </Group>
 
     </Scene>
